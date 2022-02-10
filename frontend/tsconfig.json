@@ -20,16 +20,8 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-   "include": [
-    "./src/javascript/**/*"
-  ],
-
-  "exclude": [
-    "node_modules"
-  ],
-
-  "types": [
-    "chrome",
-    "node"
+  "include": [
+    "src",
+    "types"
   ]
 }
