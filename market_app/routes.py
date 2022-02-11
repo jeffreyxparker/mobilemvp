@@ -17,7 +17,7 @@ data = 'no data'
 """Start Survey API"""
 
 @app.route('/api/start_survey', methods=['POST'])
-@cross_origin()
+@cross_origin(support_credentials=True)
 def start_survey():
     initial_values_for_markets(db)
 
