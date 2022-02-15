@@ -17,7 +17,7 @@ data = 'no data'
 """Start Survey API"""
 
 @app.route('/api/start_survey', methods=['POST'])
-@cross_origin(support_credentials=True, origin="*")
+@cross_origin(origin="*", headers=['Content- Type'])
 def start_survey():
     initial_values_for_markets(db)
 
@@ -40,7 +40,7 @@ def start_survey():
 """End survey API"""
 
 @app.route('/api/end_survey', methods=['GET','POST'])
-@cross_origin(support_credentials=True, origin="*")
+@cross_origin(origin="*", headers=['Content- Type'])
 def end_survey():
 
     if request.method=='POST':
