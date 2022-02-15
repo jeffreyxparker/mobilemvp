@@ -1,3 +1,4 @@
+import flask
 from flask import request
 from datetime import datetime
 from flask_cors import CORS, cross_origin
@@ -19,6 +20,8 @@ data = 'no data'
 @app.route('/api/start_survey', methods=['POST'])
 @cross_origin(origin="*", headers=['Content- Type'])
 def start_survey():
+    response = flask.jsonify({'some': 'data'})
+    response.headers.add('Access-Control-Allow-Origin', '*')
     initial_values_for_markets(db)
 
     """when you give rid in post request, every time new rid obj created with datetime.now()
@@ -34,7 +37,7 @@ def start_survey():
         started_time = datetime.now()
         
     """this is for get the latest price of options in all markets"""
-    return show_latest_prices(Rid,db,started_time)
+    return show_latest_prices(Rid,db,started_time), response
 
 
 """End survey API"""
@@ -42,6 +45,8 @@ def start_survey():
 @app.route('/api/end_survey', methods=['GET','POST'])
 @cross_origin(origin="*", headers=['Content- Type'])
 def end_survey():
+    response = flask.jsonify({'some': 'data'})
+    response.headers.add('Access-Control-Allow-Origin', '*')
 
     if request.method=='POST':
         """FE response data"""
@@ -67,7 +72,7 @@ def end_survey():
 
         return {'message':'server error'}
     
-    return {'message': 'data not submitted'}
+    return {'message': 'data not submitted'}, response
 
 """prices API"""
 
