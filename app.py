@@ -1,10 +1,15 @@
+from flask import Flask
+
 from market_app import create_app
 from market_app.routes import *
 from market_app.models import app
 from market_app.utils import initial_values_for_markets
 from flask_cors import CORS
 
+
 CORS(app,  support_credentials=True)
+app.config['CORS_HEADERS'] = 'Content-Type'
+app.config['Access-Control-Allow-Headers'] ='Content-Type'
 
 if __name__ == '__main__':
     db.init_app(app)
