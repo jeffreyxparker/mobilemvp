@@ -5,8 +5,10 @@ from .config import Config
 
 load_dotenv()
 
+
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(Config)
+    app.config['Access-Control-Allow-Origin'] = '*'
     CORS(app)
     return app
