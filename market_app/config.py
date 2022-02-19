@@ -6,5 +6,5 @@ load_dotenv()
 class Config:
     CORS_HEADERS = 'Content-Type'
     SECRET_KEY = os.environ.get('SECRET_KEY')
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL').replace("://", "ql://", 1)
+    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:12345678@localhost:5432/market1'
     SQLALCHEMY_TRACK_MODIFICATIONS = True

@@ -46,18 +46,18 @@ class Market_1_Bets(db.Model):
     
     money_bet_1 = db.Column(db.Float())
     money_bet_2 = db.Column(db.Float())
-    money_bet_3 = db.Column(db.Float())
-    money_bet_4 = db.Column(db.Float())
+    # money_bet_3 = db.Column(db.Float())
+    # money_bet_4 = db.Column(db.Float())
     
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
-    price_3 = db.Column(db.Float())
-    price_4 = db.Column(db.Float())
+    # price_3 = db.Column(db.Float())
+    # price_4 = db.Column(db.Float())
     
     bet_1 = db.Column(db.Integer())
     bet_2 = db.Column(db.Integer())
-    bet_3 = db.Column(db.Integer())
-    bet_4 = db.Column(db.Integer())
+    # bet_3 = db.Column(db.Integer())
+    # bet_4 = db.Column(db.Integer())
 
     def __repr__(self):
         return f"{self.rid.rid}"
@@ -68,8 +68,8 @@ class Market_1_Prices(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True, unique=True)
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
-    price_3 = db.Column(db.Float())
-    price_4 = db.Column(db.Float())
+    # price_3 = db.Column(db.Float())
+    # price_4 = db.Column(db.Float())
     update_time = db.Column(db.DateTime, default=datetime.now)
 
 
@@ -83,18 +83,18 @@ class Market_2_Bets(db.Model):
     
     money_bet_1 = db.Column(db.Float())
     money_bet_2 = db.Column(db.Float())
-    money_bet_3 = db.Column(db.Float())
-    money_bet_4 = db.Column(db.Float())
+    # money_bet_3 = db.Column(db.Float())
+    # money_bet_4 = db.Column(db.Float())
     
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
-    price_3 = db.Column(db.Float())
-    price_4 = db.Column(db.Float())
+    # price_3 = db.Column(db.Float())
+    # price_4 = db.Column(db.Float())
     
     bet_1 = db.Column(db.Integer())
     bet_2 = db.Column(db.Integer())
-    bet_3 = db.Column(db.Integer())
-    bet_4 = db.Column(db.Integer())
+    # bet_3 = db.Column(db.Integer())
+    # bet_4 = db.Column(db.Integer())
     
     def __repr__(self):
         return f"{self.rid.rid}"
@@ -105,8 +105,8 @@ class Market_2_Prices(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True, unique=True)
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
-    price_3 = db.Column(db.Float())
-    price_4 = db.Column(db.Float())
+    # price_3 = db.Column(db.Float())
+    # price_4 = db.Column(db.Float())
     update_time = db.Column(db.DateTime, default=datetime.now)
 
     
@@ -122,16 +122,19 @@ class Market_3_Bets(db.Model):
     money_bet_2 = db.Column(db.Float())
     money_bet_3 = db.Column(db.Float())
     money_bet_4 = db.Column(db.Float())
-    
+    money_bet_5 = db.Column(db.Float())
+
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
     price_3 = db.Column(db.Float())
     price_4 = db.Column(db.Float())
-    
+    price_5 = db.Column(db.Float())
+
     bet_1 = db.Column(db.Integer())
     bet_2 = db.Column(db.Integer())
     bet_3 = db.Column(db.Integer())
     bet_4 = db.Column(db.Integer())
+    bet_5 = db.Column(db.Integer())
 
     def __repr__(self):
         return f"{self.rid.rid}"
@@ -144,6 +147,7 @@ class Market_3_Prices(db.Model):
     price_2 = db.Column(db.Float())
     price_3 = db.Column(db.Float())
     price_4 = db.Column(db.Float())
+    price_5 = db.Column(db.Float())
     update_time = db.Column(db.DateTime, default=datetime.now)
     
     
@@ -157,12 +161,27 @@ class Market_4_Bets(db.Model):
     
     money_bet_1 = db.Column(db.Float())
     money_bet_2 = db.Column(db.Float())
-    
+    money_bet_3 = db.Column(db.Float())
+    money_bet_4 = db.Column(db.Float())
+    money_bet_5 = db.Column(db.Float())
+    money_bet_6 = db.Column(db.Float())
+    money_bet_7 = db.Column(db.Float())
+
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
-    
+    price_3 = db.Column(db.Float())
+    price_4 = db.Column(db.Float())
+    price_5 = db.Column(db.Float())
+    price_6 = db.Column(db.Float())
+    price_7 = db.Column(db.Float())
+
     bet_1 = db.Column(db.Integer())
     bet_2 = db.Column(db.Integer())
+    bet_3 = db.Column(db.Integer())
+    bet_4 = db.Column(db.Integer())
+    bet_5 = db.Column(db.Integer())
+    bet_6 = db.Column(db.Integer())
+    bet_7 = db.Column(db.Integer())
 
     def __repr__(self):
         return f"{self.rid.rid}"
@@ -173,6 +192,11 @@ class Market_4_Prices(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True, unique=True)
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
+    price_3 = db.Column(db.Float())
+    price_4 = db.Column(db.Float())
+    price_5 = db.Column(db.Float())
+    price_6 = db.Column(db.Float())
+    price_7 = db.Column(db.Float())
     update_time = db.Column(db.DateTime, default=datetime.now)
 
 
@@ -187,14 +211,23 @@ class Market_5_Bets(db.Model):
     money_bet_1 = db.Column(db.Float())
     money_bet_2 = db.Column(db.Float())
     money_bet_3 = db.Column(db.Float())
-    
+    money_bet_4 = db.Column(db.Float())
+    money_bet_5 = db.Column(db.Float())
+    money_bet_6 = db.Column(db.Float())
+
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
     price_3 = db.Column(db.Float())
-    
+    price_4 = db.Column(db.Float())
+    price_5 = db.Column(db.Float())
+    price_6 = db.Column(db.Float())
+
     bet_1 = db.Column(db.Integer())
     bet_2 = db.Column(db.Integer())
     bet_3 = db.Column(db.Integer())
+    bet_4 = db.Column(db.Integer())
+    bet_5 = db.Column(db.Integer())
+    bet_6 = db.Column(db.Integer())
 
     def __repr__(self):
         return f"{self.rid.rid}"
@@ -206,6 +239,9 @@ class Market_5_Prices(db.Model):
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
     price_3 = db.Column(db.Float())
+    price_4 = db.Column(db.Float())
+    price_5 = db.Column(db.Float())
+    price_6 = db.Column(db.Float())
     update_time = db.Column(db.DateTime, default=datetime.now)
     
     
@@ -220,14 +256,29 @@ class Market_6_Bets(db.Model):
     money_bet_1 = db.Column(db.Float())
     money_bet_2 = db.Column(db.Float())
     money_bet_3 = db.Column(db.Float())
-    
+    money_bet_4 = db.Column(db.Float())
+    money_bet_5 = db.Column(db.Float())
+    money_bet_6 = db.Column(db.Float())
+    money_bet_7 = db.Column(db.Float())
+    money_bet_8 = db.Column(db.Float())
+
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
     price_3 = db.Column(db.Float())
-    
+    price_4 = db.Column(db.Float())
+    price_5 = db.Column(db.Float())
+    price_6 = db.Column(db.Float())
+    price_7 = db.Column(db.Float())
+    price_8 = db.Column(db.Float())
+
     bet_1 = db.Column(db.Integer())
     bet_2 = db.Column(db.Integer())
     bet_3 = db.Column(db.Integer())
+    bet_4 = db.Column(db.Integer())
+    bet_5 = db.Column(db.Integer())
+    bet_6 = db.Column(db.Integer())
+    bet_7 = db.Column(db.Integer())
+    bet_8 = db.Column(db.Integer())
 
     def __repr__(self):
         return f"{self.rid.rid}"
@@ -239,6 +290,11 @@ class Market_6_Prices(db.Model):
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
     price_3 = db.Column(db.Float())
+    price_4 = db.Column(db.Float())
+    price_5 = db.Column(db.Float())
+    price_6 = db.Column(db.Float())
+    price_7 = db.Column(db.Float())
+    price_8 = db.Column(db.Float())
     update_time = db.Column(db.DateTime, default=datetime.now)
 
 
@@ -253,14 +309,20 @@ class Market_7_Bets(db.Model):
     money_bet_1 = db.Column(db.Float())
     money_bet_2 = db.Column(db.Float())
     money_bet_3 = db.Column(db.Float())
-    
+    money_bet_4 = db.Column(db.Float())
+    money_bet_5 = db.Column(db.Float())
+
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
     price_3 = db.Column(db.Float())
-    
+    price_4 = db.Column(db.Float())
+    price_5 = db.Column(db.Float())
+
     bet_1 = db.Column(db.Integer())
     bet_2 = db.Column(db.Integer())
     bet_3 = db.Column(db.Integer())
+    bet_4 = db.Column(db.Integer())
+    bet_5 = db.Column(db.Integer())
 
     def __repr__(self):
         return f"{self.rid.rid}"
@@ -272,6 +334,8 @@ class Market_7_Prices(db.Model):
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
     price_3 = db.Column(db.Float())
+    price_4 = db.Column(db.Float())
+    price_5 = db.Column(db.Float())
     update_time = db.Column(db.DateTime, default=datetime.now)
     
     
@@ -285,15 +349,15 @@ class Market_8_Bets(db.Model):
 
     money_bet_1 = db.Column(db.Float())
     money_bet_2 = db.Column(db.Float())
-    money_bet_3 = db.Column(db.Float())
+    # money_bet_3 = db.Column(db.Float())
     
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
-    price_3 = db.Column(db.Float())
+    # price_3 = db.Column(db.Float())
     
     bet_1 = db.Column(db.Integer())
     bet_2 = db.Column(db.Integer())
-    bet_3 = db.Column(db.Integer())
+    # bet_3 = db.Column(db.Integer())
 
     def __repr__(self):
         return f"{self.rid.rid}"
@@ -304,7 +368,7 @@ class Market_8_Prices(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True, unique=True)
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
-    price_3 = db.Column(db.Float())
+    # price_3 = db.Column(db.Float())
     update_time = db.Column(db.DateTime, default=datetime.now)
     
     
@@ -318,15 +382,15 @@ class Market_9_Bets(db.Model):
 
     money_bet_1 = db.Column(db.Float())
     money_bet_2 = db.Column(db.Float())
-    money_bet_3 = db.Column(db.Float())
+    # money_bet_3 = db.Column(db.Float())
     
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
-    price_3 = db.Column(db.Float())
+    # price_3 = db.Column(db.Float())
     
     bet_1 = db.Column(db.Integer())
     bet_2 = db.Column(db.Integer())
-    bet_3 = db.Column(db.Integer())
+    # bet_3 = db.Column(db.Integer())
 
     def __repr__(self):
         return f"{self.rid.rid}"
@@ -337,7 +401,7 @@ class Market_9_Prices(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True, unique=True)
     price_1 = db.Column(db.Float())
     price_2 = db.Column(db.Float())
-    price_3 = db.Column(db.Float())
+    # price_3 = db.Column(db.Float())
     update_time = db.Column(db.DateTime, default=datetime.now)
 
 

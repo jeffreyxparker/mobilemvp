@@ -7,117 +7,165 @@ def initial_values_for_markets(db):
     
     if not market1_check:
         market1 = Market_1_Bets(
-                    price_1=0.25,
-                    price_2=0.25,
-                    price_3=0.25,
-                    price_4=0.25,
+                    price_1=0.50,
+                    price_2=0.50,
+                    # price_3=0.25,
+                    # price_4=0.25,
                     money_bet_1=10,
                     money_bet_2=10,
-                    money_bet_3=10,
-                    money_bet_4=10,
+                    # money_bet_3=10,
+                    # money_bet_4=10,
                     bet_1=0,
                     bet_2=0,
-                    bet_3=0,
-                    bet_4=0,
+                    # bet_3=0,
+                    # bet_4=0,
         )
 
         market2 = Market_2_Bets(
-                    price_1=0.25,
-                    price_2=0.25,
-                    price_3=0.25,
-                    price_4=0.25,
+                    price_1=0.50,
+                    price_2=0.50,
+                    # price_3=0.25,
+                    # price_4=0.25,
                     money_bet_1=10,
                     money_bet_2=10,
-                    money_bet_3=10,
-                    money_bet_4=10,
+                    # money_bet_3=10,
+                    # money_bet_4=10,
                     bet_1=0,
                     bet_2=0,
-                    bet_3=0,
-                    bet_4=0,
+                    # bet_3=0,
+                    # bet_4=0,
         )
 
         market3 = Market_3_Bets(
-                    price_1=0.25,
-                    price_2=0.25,
-                    price_3=0.25,
-                    price_4=0.25,
+                    price_1=0.20,
+                    price_2=0.20,
+                    price_3=0.20,
+                    price_4=0.20,
+                    price_5=0.20,
                     money_bet_1=10,
                     money_bet_2=10,
                     money_bet_3=10,
                     money_bet_4=10,
+                    money_bet_5=10,
                     bet_1=0,
                     bet_2=0,
                     bet_3=0,
                     bet_4=0,
+                    bet_5=0,
         )
         
         market4 = Market_4_Bets(
-                    price_1=0.5,
-                    price_2=0.5,
+                    price_1=0.14,
+                    price_2=0.14,
+                    price_3=0.14,
+                    price_4=0.14,
+                    price_5=0.14,
+                    price_6=0.14,
+                    price_7=0.14,
                     money_bet_1=10,
                     money_bet_2=10,
+                    money_bet_3=10,
+                    money_bet_4=10,
+                    money_bet_5=10,
+                    money_bet_6=10,
+                    money_bet_7=10,
                     bet_1=0,
                     bet_2=0,
+                    bet_3=0,
+                    bet_4=0,
+                    bet_5=0,
+                    bet_6=0,
+                    bet_7=0,
         )
 
         market5 = Market_5_Bets(
-                    price_1=0.33,
-                    price_2=0.33,
-                    price_3=0.33,
+                    price_1=0.16,
+                    price_2=0.16,
+                    price_3=0.16,
+                    price_4=0.16,
+                    price_5=0.16,
+                    price_6=0.16,
                     money_bet_1=10,
                     money_bet_2=10,
                     money_bet_3=10,
+                    money_bet_4=10,
+                    money_bet_5=10,
+                    money_bet_6=10,
                     bet_1=0,
                     bet_2=0,
                     bet_3=0,
+                    bet_4=0,
+                    bet_5=0,
+                    bet_6=0,
         )
 
         market6 = Market_6_Bets(
-                    price_1=0.33,
-                    price_2=0.33,
-                    price_3=0.33,
+                    price_1=0.12,
+                    price_2=0.12,
+                    price_3=0.12,
+                    price_4=0.12,
+                    price_5=0.12,
+                    price_6=0.12,
+                    price_7=0.12,
+                    price_8=0.12,
                     money_bet_1=10,
                     money_bet_2=10,
                     money_bet_3=10,
+                    money_bet_4=10,
+                    money_bet_5=10,
+                    money_bet_6=10,
+                    money_bet_7=10,
+                    money_bet_8=10,
                     bet_1=0,
                     bet_2=0,
                     bet_3=0,
+                    bet_4=0,
+                    bet_5=0,
+                    bet_6=0,
+                    bet_7=0,
+                    bet_8=0,
         )
 
         market7 = Market_7_Bets(
-                    price_1=0.33,
-                    price_2=0.33,
-                    price_3=0.33,
+                    price_1=0.20,
+                    price_2=0.20,
+                    price_3=0.20,
+                    price_4=0.20,
+                    price_5=0.20,
                     money_bet_1=10,
                     money_bet_2=10,
                     money_bet_3=10,
+                    money_bet_4=10,
+                    money_bet_5=10,
                     bet_1=0,
                     bet_2=0,
                     bet_3=0,
+                    bet_4=0,
+                    bet_5=0,
         )
 
         market8 = Market_8_Bets(
-                    price_1=0.33,
-                    price_2=0.33,
-                    price_3=0.33,
+                    price_1=0.50,
+                    price_2=0.50,
+                    # price_3=0.33,
                     money_bet_1=10,
                     money_bet_2=10,
-                    money_bet_3=10,
+                    # money_bet_3=10,
                     bet_1=0,
                     bet_2=0,
-                    bet_3=0,
+                    # bet_3=0,
         )
 
         market9 = Market_9_Bets(
-                    price_1=0.33,
-                    price_2=0.33,
-                    price_3=0.33,
+                    price_1=0.50,
+                    price_2=0.50,
+                    # price_3=0.33,
                     money_bet_1=10,
                     money_bet_2=10,
-                    money_bet_3=10,
+                    # money_bet_3=10,
                     bet_1=0,
                     bet_2=0,
-                    bet_3=0,
+                    # bet_3=0,
         )
 
         market10 = Market_10_Bets(
@@ -135,56 +183,72 @@ def initial_values_for_markets(db):
         """prices table initial values"""
 
         market1_price = Market_1_Prices(
-                    price_1=0.25,
-                    price_2=0.25,
-                    price_3=0.25,
-                    price_4=0.25,
+                    price_1=0.50,
+                    price_2=0.50,
+                    # price_3=0.25,
+                    # price_4=0.25,
         )
 
         market2_price = Market_2_Prices(
-                    price_1=0.25,
-                    price_2=0.25,
-                    price_3=0.25,
-                    price_4=0.25,
+                    price_1=0.50,
+                    price_2=0.50,
+                    # price_3=0.25,
+                    # price_4=0.25,
         )
 
         market3_price = Market_3_Prices(
-                    price_1=0.25,
-                    price_2=0.25,
-                    price_3=0.25,
-                    price_4=0.25,
+                    price_1=0.20,
+                    price_2=0.20,
+                    price_3=0.20,
+                    price_4=0.20,
+                    price_5=0.20,
         )
 
         market4_price = Market_4_Prices(
-                    price_1=0.5,
-                    price_2=0.5,
+                    price_1=0.14,
+                    price_2=0.14,
+                    price_3=0.14,
+                    price_4=0.14,
+                    price_5=0.14,
+                    price_6=0.14,
+                    price_7=0.14,
         )
 
         market5_price = Market_5_Prices(
-                    price_1=0.33,
-                    price_2=0.33,
-                    price_3=0.33,
+                    price_1=0.16,
+                    price_2=0.16,
+                    price_3=0.16,
+                    price_4=0.16,
+                    price_5=0.16,
+                    price_6=0.16,
         )
 
         market6_price = Market_6_Prices(
-                    price_1=0.33,
-                    price_2=0.33,
-                    price_3=0.33,
+                    price_1=0.12,
+                    price_2=0.12,
+                    price_3=0.12,
+                    price_4=0.12,
+                    price_5=0.12,
+                    price_6=0.12,
+                    price_7=0.12,
+                    price_8=0.12,
         )
         market7_price = Market_7_Prices(
-                    price_1=0.33,
-                    price_2=0.33,
-                    price_3=0.33,
+                    price_1=0.20,
+                    price_2=0.20,
+                    price_3=0.20,
+                    price_4=0.20,
+                    price_5=0.20,
         )
         market8_price = Market_8_Prices(
-                    price_1=0.33,
-                    price_2=0.33,
-                    price_3=0.33,
+                    price_1=0.50,
+                    price_2=0.50,
+                    # price_3=0.33,
         )
         market9_price = Market_9_Prices(
-                    price_1=0.33,
-                    price_2=0.33,
-                    price_3=0.33,
+                    price_1=0.50,
+                    price_2=0.50,
+                    # price_3=0.33,
         )
         market10_price = Market_10_Prices(
                     price_1=0.33,
@@ -246,16 +310,16 @@ def show_latest_prices(Rid,db,started_time):
             'id':1,
             'option1':{'id':11,'money_bet_1':0,'price_1': m1.price_1,'bet_1':0,},
             'option2':{'id':12,'money_bet_2':0,'price_2': m1.price_2,'bet_2':0,},
-            'option3':{'id':13,'money_bet_3':0,'price_3': m1.price_3,'bet_3':0,},     
-            'option4':{'id':14,'money_bet_4':0,'price_4': m1.price_4,'bet_4':0,},
+            # 'option3':{'id':13,'money_bet_3':0,'price_3': m1.price_3,'bet_3':0,},
+            # 'option4':{'id':14,'money_bet_4':0,'price_4': m1.price_4,'bet_4':0,},
         })
     
     market2.append({
             'id':2,
             'option1':{'id':21, 'money_bet_1':0, 'price_1':m2.price_1, 'bet_1':0,},
             'option2':{'id':22, 'money_bet_2':0, 'price_2':m2.price_2, 'bet_2':0,},
-            'option3':{'id':23, 'money_bet_3':0, 'price_3':m2.price_3, 'bet_3':0,},
-            'option4':{'id':24, 'money_bet_4':0, 'price_4':m2.price_4, 'bet_4':0,},
+            # 'option3':{'id':23, 'money_bet_3':0, 'price_3':m2.price_3, 'bet_3':0,},
+            # 'option4':{'id':24, 'money_bet_4':0, 'price_4':m2.price_4, 'bet_4':0,},
         })
     
     market3.append({
@@ -264,12 +328,18 @@ def show_latest_prices(Rid,db,started_time):
             'option2':{'id':32, 'money_bet_2':0, 'price_2':m3.price_2, 'bet_2':0,},
             'option3':{'id':33, 'money_bet_3':0, 'price_3':m3.price_3, 'bet_3':0,},
             'option4':{'id':34, 'money_bet_4':0, 'price_4':m3.price_4, 'bet_4':0,},
+            'option5':{'id':35, 'money_bet_5':0, 'price_5':m3.price_5, 'bet_5':0,},
         })
     
     market4.append({
             'id':4,
             'option1':{'id':41, 'money_bet_1':0, 'price_1':m4.price_1, 'bet_1':0,},
             'option2':{'id':42, 'money_bet_2':0, 'price_2':m4.price_2, 'bet_2':0,},
+            'option3':{'id':43, 'money_bet_3':0, 'price_3':m4.price_3, 'bet_3':0,},
+            'option4':{'id':44, 'money_bet_4':0, 'price_4':m4.price_4, 'bet_4':0,},
+            'option5':{'id':45, 'money_bet_5':0, 'price_5':m4.price_5, 'bet_5':0,},
+            'option6':{'id':46, 'money_bet_6':0, 'price_6':m4.price_6, 'bet_6':0,},
+            'option7':{'id':47, 'money_bet_7':0, 'price_7':m4.price_7, 'bet_7':0,},
         })
 
     market5.append({
@@ -277,6 +347,9 @@ def show_latest_prices(Rid,db,started_time):
             'option1':{'id':51, 'money_bet_1':0, 'price_1':m5.price_1, 'bet_1':0,},
             'option2':{'id':52, 'money_bet_2':0, 'price_2':m5.price_2, 'bet_2':0,},
             'option3':{'id':53, 'money_bet_3':0, 'price_3':m5.price_3, 'bet_3':0,},
+            'option4':{'id':54, 'money_bet_4':0, 'price_4':m5.price_4, 'bet_4':0,},
+            'option5':{'id':55, 'money_bet_5':0, 'price_5':m5.price_5, 'bet_5':0,},
+            'option6':{'id':56, 'money_bet_6':0, 'price_6':m5.price_6, 'bet_6':0,},
         })
 
     market6.append({
@@ -284,6 +357,11 @@ def show_latest_prices(Rid,db,started_time):
             'option1':{'id':61, 'money_bet_1':0, 'price_1':m6.price_1, 'bet_1':0,},
             'option2':{'id':62, 'money_bet_2':0, 'price_2':m6.price_2, 'bet_2':0,},
             'option3':{'id':63, 'money_bet_3':0, 'price_3':m6.price_3, 'bet_3':0,},
+            'option4':{'id':64, 'money_bet_4':0, 'price_4':m6.price_4, 'bet_4':0,},
+            'option5':{'id':65, 'money_bet_5':0, 'price_5':m6.price_5, 'bet_5':0,},
+            'option6':{'id':66, 'money_bet_6':0, 'price_6':m6.price_6, 'bet_6':0,},
+            'option7':{'id':67, 'money_bet_7':0, 'price_7':m6.price_7, 'bet_7':0,},
+            'option8':{'id':68, 'money_bet_8':0, 'price_7':m6.price_8, 'bet_8':0,},
         })
 
     market7.append({
@@ -291,20 +369,22 @@ def show_latest_prices(Rid,db,started_time):
             'option1':{'id':71, 'money_bet_1':0, 'price_1':m7.price_1, 'bet_1':0,},
             'option2':{'id':72, 'money_bet_2':0, 'price_2':m7.price_2, 'bet_2':0,},
             'option3':{'id':73, 'money_bet_3':0, 'price_3':m7.price_3, 'bet_3':0,},
+            'option4':{'id':74, 'money_bet_4':0, 'price_4':m7.price_4, 'bet_4':0,},
+            'option5':{'id':75, 'money_bet_5':0, 'price_5':m7.price_5, 'bet_5':0,},
         })
 
     market8.append({
             'id':8,
             'option1':{'id':81, 'money_bet_1':0, 'price_1':m8.price_1, 'bet_1':0,},
             'option2':{'id':82, 'money_bet_2':0, 'price_2':m8.price_2, 'bet_2':0,},
-            'option3':{'id':83, 'money_bet_3':0, 'price_3':m8.price_3, 'bet_3':0,},
+            # 'option3':{'id':83, 'money_bet_3':0, 'price_3':m8.price_3, 'bet_3':0,},
         })
 
     market9.append({
             'id':9,
             'option1':{'id':91, 'money_bet_1':0, 'price_1':m9.price_1, 'bet_1':0,},
             'option2':{'id':92, 'money_bet_2':0, 'price_2':m9.price_2, 'bet_2':0,},
-            'option3':{'id':93, 'money_bet_3':0, 'price_3':m9.price_3, 'bet_3':0,},
+            # 'option3':{'id':93, 'money_bet_3':0, 'price_3':m9.price_3, 'bet_3':0,},
         })
 
     market10.append({
@@ -359,22 +439,22 @@ def update_all_market_prices(Rid):
         """all money bet sums for market_1"""
         sum_money_bet_1 = db.session.query(func.sum(Market_1_Bets.money_bet_1)).scalar()
         sum_money_bet_2 = db.session.query(func.sum(Market_1_Bets.money_bet_2)).scalar()
-        sum_money_bet_3 = db.session.query(func.sum(Market_1_Bets.money_bet_3)).scalar()
-        sum_money_bet_4 = db.session.query(func.sum(Market_1_Bets.money_bet_4)).scalar()
+        # sum_money_bet_3 = db.session.query(func.sum(Market_1_Bets.money_bet_3)).scalar()
+        # sum_money_bet_4 = db.session.query(func.sum(Market_1_Bets.money_bet_4)).scalar()
         
-        sum_Market1 = sum_money_bet_1 + sum_money_bet_2 + sum_money_bet_3 + sum_money_bet_4
+        sum_Market1 = sum_money_bet_1 + sum_money_bet_2
 
         """this is the updated prices for new user"""
         price1 = sum_money_bet_1/sum_Market1
         price2 = sum_money_bet_2/sum_Market1
-        price3 = sum_money_bet_3/sum_Market1
-        price4 = sum_money_bet_4/sum_Market1
+        # price3 = sum_money_bet_3/sum_Market1
+        # price4 = sum_money_bet_4/sum_Market1
 
         updated_prices_market_1 = Market_1_Prices(
                     price_1 = price1,
                     price_2 = price2,
-                    price_3 = price3,
-                    price_4 = price4
+                    # price_3 = price3,
+                    # price_4 = price4
         )
         db.session.add(updated_prices_market_1)
 
@@ -383,22 +463,18 @@ def update_all_market_prices(Rid):
 
         sum_money_bet_1 = db.session.query(func.sum(Market_2_Bets.money_bet_1)).scalar()
         sum_money_bet_2 = db.session.query(func.sum(Market_2_Bets.money_bet_2)).scalar()
-        sum_money_bet_3 = db.session.query(func.sum(Market_2_Bets.money_bet_3)).scalar()
-        sum_money_bet_4 = db.session.query(func.sum(Market_2_Bets.money_bet_4)).scalar()
-        
-        sum_Market2 = sum_money_bet_1 + sum_money_bet_2 + sum_money_bet_3 + sum_money_bet_4
+        # sum_money_bet_3 = db.session.query(func.sum(Market_2_Bets.money_bet_3)).scalar()
+        # sum_money_bet_4 = db.session.query(func.sum(Market_2_Bets.money_bet_4)).scalar()
+        #
+        sum_Market2 = sum_money_bet_1 + sum_money_bet_2
 
         """this is the updated prices for new user"""
         price1 = sum_money_bet_1/sum_Market2
         price2 = sum_money_bet_2/sum_Market2
-        price3 = sum_money_bet_3/sum_Market2
-        price4 = sum_money_bet_4/sum_Market2
 
         updated_prices_market_2 = Market_2_Prices(
                     price_1 = price1,
                     price_2 = price2,
-                    price_3 = price3,
-                    price_4 = price4
         )
         db.session.add(updated_prices_market_2)
     
@@ -409,20 +485,23 @@ def update_all_market_prices(Rid):
         sum_money_bet_2 = db.session.query(func.sum(Market_3_Bets.money_bet_2)).scalar()
         sum_money_bet_3 = db.session.query(func.sum(Market_3_Bets.money_bet_3)).scalar()
         sum_money_bet_4 = db.session.query(func.sum(Market_3_Bets.money_bet_4)).scalar()
-        
-        sum_Market3 = sum_money_bet_1 + sum_money_bet_2 + sum_money_bet_3 + sum_money_bet_4
+        sum_money_bet_5 = db.session.query(func.sum(Market_3_Bets.money_bet_5)).scalar()
+
+        sum_Market3 = sum_money_bet_1 + sum_money_bet_2 + sum_money_bet_3 + sum_money_bet_4 + sum_money_bet_5
 
         """this is the updated prices for new user"""
         price1 = sum_money_bet_1/sum_Market3
         price2 = sum_money_bet_2/sum_Market3
         price3 = sum_money_bet_3/sum_Market3
         price4 = sum_money_bet_4/sum_Market3
-        
+        price5 = sum_money_bet_5/sum_Market3
+
         updated_prices_market_3 = Market_3_Prices(
                     price_1 = price1,
                     price_2 = price2,
                     price_3 = price3,
-                    price_4 = price4
+                    price_4 = price4,
+                    price_5 = price5
         )
         db.session.add(updated_prices_market_3)
     
@@ -432,16 +511,32 @@ def update_all_market_prices(Rid):
 
         sum_money_bet_1 = db.session.query(func.sum(Market_4_Bets.money_bet_1)).scalar()
         sum_money_bet_2 = db.session.query(func.sum(Market_4_Bets.money_bet_2)).scalar()
-        
-        sum_Market4 = sum_money_bet_1 + sum_money_bet_2
+        sum_money_bet_3 = db.session.query(func.sum(Market_4_Bets.money_bet_3)).scalar()
+        sum_money_bet_4 = db.session.query(func.sum(Market_4_Bets.money_bet_4)).scalar()
+        sum_money_bet_5 = db.session.query(func.sum(Market_4_Bets.money_bet_5)).scalar()
+        sum_money_bet_6 = db.session.query(func.sum(Market_4_Bets.money_bet_6)).scalar()
+        sum_money_bet_7 = db.session.query(func.sum(Market_4_Bets.money_bet_7)).scalar()
+
+        sum_Market4 = sum_money_bet_1 + sum_money_bet_2 + sum_money_bet_3 + sum_money_bet_4 + sum_money_bet_5\
+                      + sum_money_bet_6 + sum_money_bet_7
 
         """this is the updated prices for new user"""
         price1 = sum_money_bet_1/sum_Market4
         price2 = sum_money_bet_2/sum_Market4
+        price3 = sum_money_bet_3/sum_Market4
+        price4 = sum_money_bet_4/sum_Market4
+        price5 = sum_money_bet_5/sum_Market4
+        price6 = sum_money_bet_6/sum_Market4
+        price7 = sum_money_bet_7/sum_Market4
 
         updated_prices_market_4 = Market_4_Prices(
                     price_1 = price1,
                     price_2 = price2,
+                    price_3 = price3,
+                    price_4 = price4,
+                    price_5 = price5,
+                    price_6 = price6,
+                    price_7 = price7,
         )
         db.session.add(updated_prices_market_4)
     
@@ -451,18 +546,28 @@ def update_all_market_prices(Rid):
         sum_money_bet_1 = db.session.query(func.sum(Market_5_Bets.money_bet_1)).scalar()
         sum_money_bet_2 = db.session.query(func.sum(Market_5_Bets.money_bet_2)).scalar()
         sum_money_bet_3 = db.session.query(func.sum(Market_5_Bets.money_bet_3)).scalar()
-        
-        sum_Market5 = sum_money_bet_1 + sum_money_bet_2 + sum_money_bet_3
+        sum_money_bet_4 = db.session.query(func.sum(Market_5_Bets.money_bet_4)).scalar()
+        sum_money_bet_5 = db.session.query(func.sum(Market_5_Bets.money_bet_5)).scalar()
+        sum_money_bet_6 = db.session.query(func.sum(Market_5_Bets.money_bet_6)).scalar()
+
+        sum_Market5 = sum_money_bet_1 + sum_money_bet_2 + sum_money_bet_3 + sum_money_bet_4 + sum_money_bet_5\
+                      + sum_money_bet_6
 
         """this is the updated prices for new user"""
         price1 = sum_money_bet_1/sum_Market5
         price2 = sum_money_bet_2/sum_Market5
         price3 = sum_money_bet_3/sum_Market5
+        price4 = sum_money_bet_4/sum_Market5
+        price5 = sum_money_bet_5/sum_Market5
+        price6 = sum_money_bet_6/sum_Market5
 
         updated_prices_market_5 = Market_5_Prices(
                     price_1 = price1,
                     price_2 = price2,
                     price_3 = price3,
+                    price_4 = price4,
+                    price_5 = price5,
+                    price_6 = price6,
         )
         db.session.add(updated_prices_market_5)
     
@@ -472,18 +577,34 @@ def update_all_market_prices(Rid):
         sum_money_bet_1 = db.session.query(func.sum(Market_6_Bets.money_bet_1)).scalar()
         sum_money_bet_2 = db.session.query(func.sum(Market_6_Bets.money_bet_2)).scalar()
         sum_money_bet_3 = db.session.query(func.sum(Market_6_Bets.money_bet_3)).scalar()
-        
-        sum_Market6 = sum_money_bet_1 + sum_money_bet_2 + sum_money_bet_3
+        sum_money_bet_4 = db.session.query(func.sum(Market_6_Bets.money_bet_4)).scalar()
+        sum_money_bet_5 = db.session.query(func.sum(Market_6_Bets.money_bet_5)).scalar()
+        sum_money_bet_6 = db.session.query(func.sum(Market_6_Bets.money_bet_6)).scalar()
+        sum_money_bet_7 = db.session.query(func.sum(Market_6_Bets.money_bet_7)).scalar()
+        sum_money_bet_8 = db.session.query(func.sum(Market_6_Bets.money_bet_8)).scalar()
+
+        sum_Market6 = sum_money_bet_1 + sum_money_bet_2 + sum_money_bet_3 + sum_money_bet_4 + sum_money_bet_5\
+                      + sum_money_bet_6 + sum_money_bet_7 + sum_money_bet_8
 
         """this is the updated prices for new user"""
         price1 = sum_money_bet_1/sum_Market6
         price2 = sum_money_bet_2/sum_Market6
         price3 = sum_money_bet_3/sum_Market6
+        price4 = sum_money_bet_4/sum_Market6
+        price5 = sum_money_bet_5/sum_Market6
+        price6 = sum_money_bet_6/sum_Market6
+        price7 = sum_money_bet_7/sum_Market6
+        price8 = sum_money_bet_8/sum_Market6
 
         updated_prices_market_6 = Market_6_Prices(
                     price_1 = price1,
                     price_2 = price2,
                     price_3 = price3,
+                    price_4 = price4,
+                    price_5 = price5,
+                    price_6 = price6,
+                    price_7 = price7,
+                    price_8 = price8,
         )
         db.session.add(updated_prices_market_6)
     
@@ -493,18 +614,24 @@ def update_all_market_prices(Rid):
         sum_money_bet_1 = db.session.query(func.sum(Market_7_Bets.money_bet_1)).scalar()
         sum_money_bet_2 = db.session.query(func.sum(Market_7_Bets.money_bet_2)).scalar()
         sum_money_bet_3 = db.session.query(func.sum(Market_7_Bets.money_bet_3)).scalar()
-        
-        sum_Market7 = sum_money_bet_1 + sum_money_bet_2 + sum_money_bet_3
+        sum_money_bet_4 = db.session.query(func.sum(Market_7_Bets.money_bet_4)).scalar()
+        sum_money_bet_5 = db.session.query(func.sum(Market_7_Bets.money_bet_5)).scalar()
+
+        sum_Market7 = sum_money_bet_1 + sum_money_bet_2 + sum_money_bet_3 + sum_money_bet_4 + sum_money_bet_5
 
         """this is the updated prices for new user"""
         price1 = sum_money_bet_1/sum_Market7
         price2 = sum_money_bet_2/sum_Market7
         price3 = sum_money_bet_3/sum_Market7
+        price4 = sum_money_bet_4/sum_Market7
+        price5 = sum_money_bet_5/sum_Market7
 
         updated_prices_market_7 = Market_7_Prices(
                     price_1 = price1,
                     price_2 = price2,
                     price_3 = price3,
+                    price_4 = price4,
+                    price_5 = price5,
         )
         db.session.add(updated_prices_market_7)
     
@@ -514,19 +641,19 @@ def update_all_market_prices(Rid):
 
         sum_money_bet_1 = db.session.query(func.sum(Market_8_Bets.money_bet_1)).scalar()
         sum_money_bet_2 = db.session.query(func.sum(Market_8_Bets.money_bet_2)).scalar()
-        sum_money_bet_3 = db.session.query(func.sum(Market_8_Bets.money_bet_3)).scalar()
+        # sum_money_bet_3 = db.session.query(func.sum(Market_8_Bets.money_bet_3)).scalar()
         
-        sum_Market8 = sum_money_bet_1 + sum_money_bet_2 + sum_money_bet_3
+        sum_Market8 = sum_money_bet_1 + sum_money_bet_2
 
         """this is the updated prices for new user"""
         price1 = sum_money_bet_1/sum_Market8
         price2 = sum_money_bet_2/sum_Market8
-        price3 = sum_money_bet_3/sum_Market8
+        # price3 = sum_money_bet_3/sum_Market8
 
         updated_prices_market_8 = Market_8_Prices(
                     price_1 = price1,
                     price_2 = price2,
-                    price_3 = price3,
+                    # price_3 = price3,
         )
     
         db.session.add(updated_prices_market_8)
@@ -536,19 +663,19 @@ def update_all_market_prices(Rid):
 
         sum_money_bet_1 = db.session.query(func.sum(Market_9_Bets.money_bet_1)).scalar()
         sum_money_bet_2 = db.session.query(func.sum(Market_9_Bets.money_bet_2)).scalar()
-        sum_money_bet_3 = db.session.query(func.sum(Market_9_Bets.money_bet_3)).scalar()
+        # sum_money_bet_3 = db.session.query(func.sum(Market_9_Bets.money_bet_3)).scalar()
         
-        sum_Market9 = sum_money_bet_1 + sum_money_bet_2 + sum_money_bet_3
+        sum_Market9 = sum_money_bet_1 + sum_money_bet_2
 
         """this is the updated prices for new user"""
         price1 = sum_money_bet_1/sum_Market9
         price2 = sum_money_bet_2/sum_Market9
-        price3 = sum_money_bet_3/sum_Market9
+        # price3 = sum_money_bet_3/sum_Market9
 
         updated_prices_market_9 = Market_9_Prices(
                     price_1 = price1,
                     price_2 = price2,
-                    price_3 = price3,
+                    # price_3 = price3,
         )
         db.session.add(updated_prices_market_9)
     

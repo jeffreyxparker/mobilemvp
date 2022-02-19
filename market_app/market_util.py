@@ -53,43 +53,43 @@ def store_FE_response_data(data,resp):
                     check_obj.price_2 = price
                     db.session.commit()
 
-            if i['id']==13:
-                bet_val = i['bet']
-                price = i['price']
-                check_obj = Market_1_Bets.query.filter_by(rid=resp.id).first()
-                if not check_obj: 
-                    market_obj = Market_1_Bets(
-                                rid=resp.id,
-                                money_bet_3 = price * bet_val,
-                                bet_3 = bet_val,
-                                price_3 = price  
-                                )
-                    db.session.add(market_obj)  
-                    db.session.commit()                 
-                else:
-                    check_obj.money_bet_3 = price * bet_val
-                    check_obj.bet_3 = bet_val
-                    check_obj.price_3 = price
-                    db.session.commit()
-
-            if i['id']==14:
-                bet_val = i['bet']
-                price = i['price']
-                check_obj = Market_1_Bets.query.filter_by(rid=resp.id).first()
-                if not check_obj: 
-                    market_obj = Market_1_Bets(
-                                rid=resp.id,
-                                money_bet_4 = price * bet_val,
-                                bet_4 = bet_val,
-                                price_4 = price  
-                                )
-                    db.session.add(market_obj)  
-                    db.session.commit()                    
-                else:
-                    check_obj.money_bet_4 = price * bet_val
-                    check_obj.bet_4 = bet_val
-                    check_obj.price_4 = price
-                    db.session.commit()
+            # if i['id']==13:
+            #     bet_val = i['bet']
+            #     price = i['price']
+            #     check_obj = Market_1_Bets.query.filter_by(rid=resp.id).first()
+            #     if not check_obj:
+            #         market_obj = Market_1_Bets(
+            #                     rid=resp.id,
+            #                     money_bet_3 = price * bet_val,
+            #                     bet_3 = bet_val,
+            #                     price_3 = price
+            #                     )
+            #         db.session.add(market_obj)
+            #         db.session.commit()
+            #     else:
+            #         check_obj.money_bet_3 = price * bet_val
+            #         check_obj.bet_3 = bet_val
+            #         check_obj.price_3 = price
+            #         db.session.commit()
+            #
+            # if i['id']==14:
+            #     bet_val = i['bet']
+            #     price = i['price']
+            #     check_obj = Market_1_Bets.query.filter_by(rid=resp.id).first()
+            #     if not check_obj:
+            #         market_obj = Market_1_Bets(
+            #                     rid=resp.id,
+            #                     money_bet_4 = price * bet_val,
+            #                     bet_4 = bet_val,
+            #                     price_4 = price
+            #                     )
+            #         db.session.add(market_obj)
+            #         db.session.commit()
+            #     else:
+            #         check_obj.money_bet_4 = price * bet_val
+            #         check_obj.bet_4 = bet_val
+            #         check_obj.price_4 = price
+            #         db.session.commit()
 
             """Market_2"""
             if i['id']==21:
@@ -130,43 +130,43 @@ def store_FE_response_data(data,resp):
                     check_obj.price_2 = price  
                     db.session.commit()
 
-            if i['id']==23:
-                bet_val = i['bet']
-                price = i['price']
-                check_obj = Market_2_Bets.query.filter_by(rid=resp.id).first()
-                if not check_obj: 
-                    market_obj = Market_2_Bets(
-                                rid=resp.id,
-                                money_bet_3 = price * bet_val,
-                                bet_3 = bet_val,
-                                price_3 = price    
-                                )
-                    db.session.add(market_obj)  
-                    db.session.commit()                  
-                else:
-                    check_obj.money_bet_3 = price * bet_val
-                    check_obj.bet_3 = bet_val
-                    check_obj.price_3 = price  
-                    db.session.commit()
-
-            if i['id']==24:
-                bet_val = i['bet']
-                price = i['price']
-                check_obj = Market_2_Bets.query.filter_by(rid=resp.id).first()
-                if not check_obj: 
-                    market_obj = Market_2_Bets(
-                                rid=resp.id,
-                                money_bet_4 = price * bet_val,
-                                bet_4 = bet_val,
-                                price_4 = price    
-                                )
-                    db.session.add(market_obj)  
-                    db.session.commit()                  
-                else:
-                    check_obj.money_bet_4 = price * bet_val
-                    check_obj.bet_4 = bet_val
-                    check_obj.price_4 = price  
-                    db.session.commit()
+            # if i['id']==23:
+            #     bet_val = i['bet']
+            #     price = i['price']
+            #     check_obj = Market_2_Bets.query.filter_by(rid=resp.id).first()
+            #     if not check_obj:
+            #         market_obj = Market_2_Bets(
+            #                     rid=resp.id,
+            #                     money_bet_3 = price * bet_val,
+            #                     bet_3 = bet_val,
+            #                     price_3 = price
+            #                     )
+            #         db.session.add(market_obj)
+            #         db.session.commit()
+            #     else:
+            #         check_obj.money_bet_3 = price * bet_val
+            #         check_obj.bet_3 = bet_val
+            #         check_obj.price_3 = price
+            #         db.session.commit()
+            #
+            # if i['id']==24:
+            #     bet_val = i['bet']
+            #     price = i['price']
+            #     check_obj = Market_2_Bets.query.filter_by(rid=resp.id).first()
+            #     if not check_obj:
+            #         market_obj = Market_2_Bets(
+            #                     rid=resp.id,
+            #                     money_bet_4 = price * bet_val,
+            #                     bet_4 = bet_val,
+            #                     price_4 = price
+            #                     )
+            #         db.session.add(market_obj)
+            #         db.session.commit()
+            #     else:
+            #         check_obj.money_bet_4 = price * bet_val
+            #         check_obj.bet_4 = bet_val
+            #         check_obj.price_4 = price
+            #         db.session.commit()
 
             """Market_3"""
             if i['id']==31:
@@ -244,6 +244,25 @@ def store_FE_response_data(data,resp):
                     check_obj.bet_4 = bet_val
                     check_obj.price_4 = price
                     db.session.commit()
+
+            if i['id']==35:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_3_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_3_Bets(
+                                rid=resp.id,
+                                money_bet_5 = price * bet_val,
+                                bet_5 = bet_val,
+                                price_5 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_5 = price * bet_val
+                    check_obj.bet_5 = bet_val
+                    check_obj.price_5 = price
+                    db.session.commit()
                     
             """Market_4"""
             if i['id']==41:
@@ -284,6 +303,100 @@ def store_FE_response_data(data,resp):
                     check_obj.price_2 = price
                     db.session.commit()
 
+            if i['id']==43:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_4_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_4_Bets(
+                                rid=resp.id,
+                                money_bet_3 = price * bet_val,
+                                bet_3 = bet_val,
+                                price_3 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_3 = price * bet_val
+                    check_obj.bet_3 = bet_val
+                    check_obj.price_3 = price
+                    db.session.commit()
+
+            if i['id']==44:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_4_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_4_Bets(
+                                rid=resp.id,
+                                money_bet_4 = price * bet_val,
+                                bet_4 = bet_val,
+                                price_4 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_4 = price * bet_val
+                    check_obj.bet_4 = bet_val
+                    check_obj.price_4 = price
+                    db.session.commit()
+
+            if i['id']==45:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_4_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_4_Bets(
+                                rid=resp.id,
+                                money_bet_5 = price * bet_val,
+                                bet_5 = bet_val,
+                                price_5 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_5 = price * bet_val
+                    check_obj.bet_5 = bet_val
+                    check_obj.price_5 = price
+                    db.session.commit()
+
+            if i['id']==46:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_4_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_4_Bets(
+                                rid=resp.id,
+                                money_bet_6 = price * bet_val,
+                                bet_6 = bet_val,
+                                price_6 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_6 = price * bet_val
+                    check_obj.bet_6 = bet_val
+                    check_obj.price_6 = price
+                    db.session.commit()
+
+            if i['id']==47:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_4_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_4_Bets(
+                                rid=resp.id,
+                                money_bet_7 = price * bet_val,
+                                bet_7 = bet_val,
+                                price_7 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_7 = price * bet_val
+                    check_obj.bet_7 = bet_val
+                    check_obj.price_7 = price
+                    db.session.commit()
 
             """Market_5"""
             if i['id']==51:
@@ -341,6 +454,64 @@ def store_FE_response_data(data,resp):
                     check_obj.money_bet_3 = price * bet_val
                     check_obj.bet_3 = bet_val
                     check_obj.price_3 = price
+                    db.session.commit()
+
+            if i['id']==54:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_5_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_5_Bets(
+                                rid=resp.id,
+                                money_bet_4 = price * bet_val,
+                                bet_4 = bet_val,
+                                price_4 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_4 = price * bet_val
+                    check_obj.bet_4 = bet_val
+                    check_obj.price_4 = price
+                    db.session.commit()
+
+            if i['id']==55:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_5_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_5_Bets(
+                                rid=resp.id,
+                                money_bet_5 = price * bet_val,
+                                bet_5 = bet_val,
+                                price_5 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_5 = price * bet_val
+                    check_obj.bet_5 = bet_val
+                    check_obj.price_5 = price
+                    db.session.commit()
+
+
+            if i['id']==56:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_5_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_5_Bets(
+                                rid=resp.id,
+                                money_bet_6 = price * bet_val,
+                                bet_6 = bet_val,
+                                price_6 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_6 = price * bet_val
+                    check_obj.bet_6 = bet_val
+                    check_obj.price_6 = price
                     db.session.commit()
 
             """Market_6"""
@@ -401,6 +572,101 @@ def store_FE_response_data(data,resp):
                     check_obj.price_3 = price  
                     db.session.commit()
 
+            if i['id']==64:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_6_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_6_Bets(
+                                rid=resp.id,
+                                money_bet_4 = price * bet_val,
+                                bet_4 = bet_val,
+                                price_4 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_4 = price * bet_val
+                    check_obj.bet_4 = bet_val
+                    check_obj.price_4 = price
+                    db.session.commit()
+
+            if i['id']==65:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_6_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_6_Bets(
+                                rid=resp.id,
+                                money_bet_5 = price * bet_val,
+                                bet_5 = bet_val,
+                                price_5 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_5 = price * bet_val
+                    check_obj.bet_5 = bet_val
+                    check_obj.price_5 = price
+                    db.session.commit()
+
+            if i['id']==66:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_6_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_6_Bets(
+                                rid=resp.id,
+                                money_bet_6 = price * bet_val,
+                                bet_6 = bet_val,
+                                price_6 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_6 = price * bet_val
+                    check_obj.bet_6 = bet_val
+                    check_obj.price_6 = price
+                    db.session.commit()
+
+            if i['id']==67:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_6_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_6_Bets(
+                                rid=resp.id,
+                                money_bet_7 = price * bet_val,
+                                bet_7 = bet_val,
+                                price_7 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_7 = price * bet_val
+                    check_obj.bet_7 = bet_val
+                    check_obj.price_7 = price
+                    db.session.commit()
+
+            if i['id']==68:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_6_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_6_Bets(
+                                rid=resp.id,
+                                money_bet_8 = price * bet_val,
+                                bet_8 = bet_val,
+                                price_8 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_8 = price * bet_val
+                    check_obj.bet_8 = bet_val
+                    check_obj.price_8 = price
+                    db.session.commit()
+
             """Market_7"""
             if i['id']==71:   
                 bet_val = i['bet']
@@ -459,6 +725,44 @@ def store_FE_response_data(data,resp):
                     check_obj.price_3 = price  
                     db.session.commit()
 
+            if i['id']==74:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_7_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_7_Bets(
+                                rid=resp.id,
+                                money_bet_4 = price * bet_val,
+                                bet_4 = bet_val,
+                                price_4 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_4 = price * bet_val
+                    check_obj.bet_4 = bet_val
+                    check_obj.price_4 = price
+                    db.session.commit()
+
+            if i['id']==75:
+                bet_val = i['bet']
+                price = i['price']
+                check_obj = Market_7_Bets.query.filter_by(rid=resp.id).first()
+                if not check_obj:
+                    market_obj = Market_7_Bets(
+                                rid=resp.id,
+                                money_bet_5 = price * bet_val,
+                                bet_5 = bet_val,
+                                price_5 = price
+                                )
+                    db.session.add(market_obj)
+                    db.session.commit()
+                else:
+                    check_obj.money_bet_5 = price * bet_val
+                    check_obj.bet_5 = bet_val
+                    check_obj.price_5 = price
+                    db.session.commit()
+
             """Market_8"""
             if i['id']==81:
                 bet_val = i['bet']
@@ -498,24 +802,24 @@ def store_FE_response_data(data,resp):
                     check_obj.price_2 = price
                     db.session.commit()
 
-            if i['id']==83:
-                bet_val = i['bet']
-                price = i['price']
-                check_obj = Market_8_Bets.query.filter_by(rid=resp.id).first()
-                if not check_obj: 
-                    market_obj = Market_8_Bets(
-                                rid=resp.id,
-                                money_bet_3 = price * bet_val,
-                                bet_3 = bet_val,
-                                price_3 = price  
-                                )
-                    db.session.add(market_obj)  
-                    db.session.commit()    
-                else:
-                    check_obj.money_bet_3 = price * bet_val
-                    check_obj.bet_3 = bet_val
-                    check_obj.price_3 = price  
-                    db.session.commit()
+            # if i['id']==83:
+            #     bet_val = i['bet']
+            #     price = i['price']
+            #     check_obj = Market_8_Bets.query.filter_by(rid=resp.id).first()
+            #     if not check_obj:
+            #         market_obj = Market_8_Bets(
+            #                     rid=resp.id,
+            #                     money_bet_3 = price * bet_val,
+            #                     bet_3 = bet_val,
+            #                     price_3 = price
+            #                     )
+            #         db.session.add(market_obj)
+            #         db.session.commit()
+            #     else:
+            #         check_obj.money_bet_3 = price * bet_val
+            #         check_obj.bet_3 = bet_val
+            #         check_obj.price_3 = price
+            #         db.session.commit()
 
             """Market_9"""
             if i['id']==91:
@@ -556,25 +860,25 @@ def store_FE_response_data(data,resp):
                     check_obj.price_2 = price  
                     db.session.commit()
 
-            if i['id']==93:
-                bet_val = i['bet']
-                price = i['price']
-                check_obj = Market_9_Bets.query.filter_by(rid=resp.id).first()
-                if not check_obj:
-                    market_obj = Market_9_Bets(
-                                rid=resp.id,
-                                money_bet_3 = price * bet_val,
-                                bet_3 = bet_val,  
-                                price_3 = price
-                                )
-                    db.session.add(market_obj)  
-                    db.session.commit()    
-                else:
-                    check_obj.money_bet_3 = price * bet_val
-                    check_obj.bet_3 = bet_val
-                    check_obj.price_3 = price
-
-                    db.session.commit()
+            # if i['id']==93:
+            #     bet_val = i['bet']
+            #     price = i['price']
+            #     check_obj = Market_9_Bets.query.filter_by(rid=resp.id).first()
+            #     if not check_obj:
+            #         market_obj = Market_9_Bets(
+            #                     rid=resp.id,
+            #                     money_bet_3 = price * bet_val,
+            #                     bet_3 = bet_val,
+            #                     price_3 = price
+            #                     )
+            #         db.session.add(market_obj)
+            #         db.session.commit()
+            #     else:
+            #         check_obj.money_bet_3 = price * bet_val
+            #         check_obj.bet_3 = bet_val
+            #         check_obj.price_3 = price
+            #
+            #         db.session.commit()
 
             """Market_10"""
             if i['id']==101:
